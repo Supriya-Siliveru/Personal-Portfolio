@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+</head>
+<style>
+    .bg{
+        background-color: black;
+    }
+    .container {
+        background-image: url(background\ img.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 80vw;
+        height: auto;
+        /* border: 1px solid black; */
+        margin-left: 9vw;
+        background-color: #fff;
+
+    }
+
+    .content {
+        color: white;
+        padding-left: 15vw;
+        padding-top: 10vh;
+
+    }
+
+    .menu-bar {
+        padding-left: 15vw;
+        padding-top: 3vh;
+        display: flex;
+        gap: 60px;
+        color: white;
+        font-size: 10px;
+        font-family: sans-serif;
+    }
+    .menu-bar a{
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+    }
+    .menu-bar a:hover{
+        color: #ffe578;
+        font-size: 12px;
+
+    }
+
+    .about-me {
+        display: flex;
+        /* border: 1px solid black; */
+        width: 80vw;
+        height: 60vh;
+        margin-top: 40vh;
+    }
+
+    .box {
+        margin-left: 4vw;
+        margin-top: 5vh;
+        margin-right: 8vw;
+        text-align: justify;
+    }
+
+    .skills-section {
+        width: 100%;
+        height: 70vh;
+        /* border: 1px solid black; */
+        margin-top: 8vh;
+        text-align: center;
+    }
+
+    .skills-boxes {
+        display: flex;
+        gap: 10vw;
+        justify-content: center;
+        margin-top: 8vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .skills-boxes img {
+        width: 70px;
+    }
+    .skills-boxes p{
+        text-align: justify;
+    }
+
+    .projects-sec {
+        width: 100%;
+        height: 160vh;
+        /* border: 1px solid black; */
+        margin-top: 4vh;
+        text-align: center;
+        background-color: rgb(232, 232, 226);
+    }
+    .project-boxes{
+        display: flex;
+        gap: 6vw;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+    }
+    .project1, .project2, .project3, .project4, .project5,.project6{
+        /* border: 1px solid black; */
+        width: 20vw;
+        height: 60vh;
+        background-color: #fff;
+        /* background-color: #191919; */
+    }
+    .project1{
+        background-image: url(https://variety.com/wp-content/uploads/2019/02/netflix-logo-originals.jpg?w=640);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+    .project2{
+        background-image: url(https://www.connexionblog.com/wp-content/uploads/2023/07/indian-railway-irctc-not-allow-to-book-any-type-of.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+    .project3{
+        background-image: url(https://www.teahub.io/photos/full/93-936029_zedge-ringtones.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+    .project4{
+        background-image: url(https://img-c.udemycdn.com/course/750x422/3966018_9bd5.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+    .project5{
+        background-image: url(https://images.tv9marathi.com/wp-content/uploads/2023/09/pm-justin-trudeau-behaviour-with-pm-narendra-modi-in-g20-summit-not-good.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+    .project6{
+        background-image: url(https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F03%2FEn2e4Hm.jpg&signature=365050ac87956a8ddc65d8e9b6fd6da7);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+    .hireme-sec{
+        width: 100%;
+        height: 20vh;
+        /* border: 1px solid gray; */
+        background-color: rgb(214, 214, 220);
+        display: flex;
+        /* margin-top: 10vh; */
+    }
+    .hire-text{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    .contact-sec{
+        display: flex;
+        gap: 15vh;
+        padding-left: 30vh;
+    }
+    .contact-sec p{
+        font-size: 12px;
+    }
+    .footer-sec{
+        width: 100%;
+        height: 12vh;
+        background-color: gray;
+        color: #fff;
+        font-size: 13px;
+        text-align: center;
+        align-content: center;
+
+    }
+    .footer-bar{
+        margin-top: 4vh;
+        padding-top: 2vh;
+        display: flex;
+        justify-content: center;
+        gap: 10vw;
+    }
+</style>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <div class="menu-bar">
+                <img src="logo.png" alt="" style="width: 50px; padding-right: 15vw;">
+                <a href="#">HOME</a>
+                <a href="#about-me" id="about">ABOUT</a>
+                <a href="#">SKILLS</a>
+                <a href="#">PROJECTS</a>
+                <a href="#">CONTACT ME</a>
+            </div>
+            <div class="content">
+                <h1 style="color: grey;">Hello,</h1>
+                <h1>I'M SUPRIYA SILIVERU</h1>
+                <h5>Frontend Developer</h5>
+                <div class="button">
+                    <button
+                        style="height: 6vh; width: 10vw; background-color: black; color: darkgoldenrod; border: 1px solid darkgoldenrod;">Contact
+                        Me</button>
+                </div>
+            </div>
+    
+            <div class="about-me" id="about">
+                <img src="image 2.png" alt="image 2" style="width: 24vw; padding-left: 8vw;">
+                <div class="box">
+                    <h3>About Me</h3>
+                    <h2>I Am a Front-end Developer</h2>
+                    <p style="font-size: smaller;">With a strong foundation in web development and a passion for crafting
+                        beautiful, user-friendly interfaces, I've been fortunate to bring stunning digital experiences to
+                        life.
+                        working on a range of projects that blend cutting-edge design with top-notch development. My toolbox
+                        includes HTML, CSS and JavaScript. I thrive on creating pixel-perfect designs and ensuring seamless
+                        user interactions.</p>
+    
+                    <p style="font-size: smaller;">I believe in the power of collaboration and effective communication.
+                        Working closely with designers and back-end developers, I transform concepts into reality while
+                        maintaining a strong focus on user experience.</p>
+    
+                    <div class="resume">
+                        <button
+                            style="width: 13vw; height: 6vh; font-family: sans-serif;font-weight: bold; background-color: #ffe578;"><a
+                                href="Resume_Supriya.S.pdf">Download Resume</a></button>
+                    </div>
+                </div>
+    
+    
+            </div>
+    
+            <div class="skills-section">
+                <h2>Skills</h2>
+                <div class="skills-boxes">
+                    <div class="skill1">
+                        <img src="html logo.png" alt="">
+                        <h3>HTML</h3>
+                        <p>Proficient in creating structured and semantically meaningful web content.<br>
+                            Skilled in using HTML5 elements to enhance accessibility and SEO.</p>
+    
+                    </div>
+                    <div class="skill2">
+                        <img src="css logo.png" alt="">
+                        <h3>CSS</h3>
+                        <p>Proficient in crafting visually appealing and responsive web designs.<br>
+                            Expertise in layout design, including Flexbox and CSS Grid.
+                        </p>
+    
+                    </div>
+                    <div class="skill3">
+                        <img src="Js logo.png" alt="">
+                        <h3>JAVASCRIPT</h3>
+                        <p>Commitment to adhering to JavaScript best practices, design patterns, and code
+                            optimization.<br>Passion for staying updated with the latest JavaScript developments and emerging
+                            technologies.</p>
+    
+                    </div>
+                </div>
+            </div>
+    
+            <div class="projects-sec">
+                <h2 style="padding-top: 5vh;">PROJECTS</h2>
+                <div class="project-boxes">
+                    <div class="project1">
+                        <h3 style="padding-top: 25vh;">Netflix-India</h3>
+                        <p style="color: rgb(48, 49, 47); text-align: justify; font-size: 15px; padding-left: 1.5vw; padding-right: 1.5vw;">Designed Netflix website page using HTML and CSS. </p>
+                        <button style="width: 12vw; height: 5vh; background-color: #ffe578; border: 1px solid black; margin-top: 35px;"><a href="https://github.com/Supriya-Siliveru/Netfix-India.git" style="color: black;">View Project Here</a></button>
+                        
+    
+                    </div>
+                    <div class="project2">
+                        <h3 style="padding-top: 25vh;">IRCTC</h3>
+                        <p style="color: rgb(48, 49, 47); text-align: justify; font-size: 15px; padding-left: 1.5vw; padding-right: 1.5vw;">Layout design of IRCTC online booking home page. Created using frontend frameworks. This is one of my best projects ever done.</p>
+                        <button style="width: 12vw; height: 5vh; background-color: #ffe578; border: 1px solid black;"><a href="http://127.0.0.1:5500/IRCTC-Form.html/Assignment.html" style="color: black; ">View Project Here</a></button>
+                        
+                    </div>
+                    <div class="project3">
+                        <h3 style="padding-top: 25vh;">ZEDGE</h3>
+                        <p style="color: rgb(48, 49, 47); text-align: justify; font-size: 15px; padding-left: 1.5vw; padding-right: 1.5vw;">Zedge website main page layout is been designed.</p>
+                        <button style="width: 12vw; height: 5vh; background-color: #ffe578; border: 1px solid black; margin-top: 35px;"><a href="http://127.0.0.1:5500/card.html/ZEDGE-project.html" style="color: black; ">View Project Here</a></button>
+                        
+                    </div>
+                    <div class="project4">
+                        <h3 style="padding-top: 25vh;">Event-Form</h3>
+                        <p style="color: rgb(48, 49, 47); text-align: justify; font-size: 15px; padding-left: 1.5vw; padding-right: 1.5vw;">Created a Webinar Event Form using Flexbox model and form tags.</p>
+                        <button style="width: 12vw; height: 5vh; background-color: #ffe578; border: 1px solid black;margin-top: 35px;"><a href="https://github.com/Supriya-Siliveru/Contest-1.git" style="color: black; ">View Project Here</a></button>
+                        
+                    </div>
+                    <div class="project5">
+                        <h3 style="padding-top: 25vh;">The Conflict</h3>
+                        <p style="color: rgb(48, 49, 47); text-align: justify; font-size: 15px; padding-left: 1.5vw; padding-right: 1.5vw;">Details about the conflict of India vs Canada. Explained everything about khalisthani movement using various types style tags and HTML.</p>
+                        <button style="width: 12vw; height: 5vh; background-color: #ffe578; border: 1px solid black;"><a href="https://github.com/Supriya-Siliveru/ksp_task2.git" style="color: black; ">View Project Here</a></button>
+                        
+                    </div>
+                    <div class="project6">
+                        <h3 style="padding-top: 25vh;">Basics of JS</h3>
+                        <p style="color: rgb(48, 49, 47); text-align: justify; font-size: 15px; padding-left: 1.5vw; padding-right: 1.5vw;">This project was done by using basics of JavaScript.</p>
+                        <button style="width: 12vw; height: 5vh; background-color: #ffe578; border: 1px solid black;margin-top: 35px;"><a href="https://github.com/Supriya-Siliveru/KSP_5.git" style="color: black; ">View Project Here</a></button>
+    
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="hireme-sec">
+                <div class="hire-text">
+                    <h2>Hire Me For Your Awesome Project</h2>
+                    <p style="font-family: 'Segoe UI';font-size: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos distinctio sit odit quas aliquam autem</p>
+                </div>
+                <div><button style="width: 10vw; height: 5vh; background-color: #ffe578; border: 1px solid #ffe578;margin-top: 8vh;">HIRE ME</button></div>
+            </div>
+    
+            <div class="contact-sec">
+                <div>
+                    <h4>Contact Info.</h4>
+                    <p>street, area,<br> Hyderabad</p>
+                    <p>********32</p>
+                    <p>supriya.siliveru <br>3@gmail.com</p>
+    
+                </div>
+                <div>
+                    <h4>Send your Message</h4>
+                    <input type="text" placeholder="Name" style="width: 18vw; height: 4vh;">
+                    <input type="number" placeholder="Phone No." style="width: 18vw; height: 4vh;"><br><br>
+                    <input type="text" placeholder="Message" style="width: 37vw; height: 15vh;">
+                    <div><button style="width: 8vw; height: 5vh; background-color: #ffe578; margin-top: 5vh; border: 1px solid #ffe578;">Submit Now</button></div>
+                </div>
+                
+    
+            </div>
+            <div class="footer-sec">
+                <div class="footer-bar">
+                    <ul>
+                        <li><a href="https://github.com/Supriya-Siliveru" style="color: #fff;">Git-Hub</a></li>
+                        <li><a href="https://www.linkedin.com/in/supriya-siliveru/" style="color: #fff;">LinkedIn</a></li></li>
+                    </ul>
+                </div>
+                
+            </div>
+    
+        </div>
+    </div>
+
+</body>
+
+</html>
